@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Collab:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Collab</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="StudentDBProject-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Collab:war exploded" />
+    </root>
+  </artifact>
+</component>
