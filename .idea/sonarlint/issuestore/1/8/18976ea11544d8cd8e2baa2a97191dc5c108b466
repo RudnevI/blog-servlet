@@ -1,12 +1,12 @@
 
 u
-java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÓÜöø8õ÷Š¯„/
-u
 java:S19890"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ÅÛÀöşÿÿÿÿ8‘œÉ®„/
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çÊ»ùÿÿÿÿ
-~
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(°°‘û8ˆ‡‘®„/
-\
-java:S2441)":Make "User" serializable or don't store it in the session.(ıù«äøÿÿÿÿ8¾‹É®„/
+u
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ÓÜöø8õ÷Š¯„/
 J
 java:S1068"-Remove this unused "dbManager" private field.(ÓÜöø8ÇÄ¾¯„/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çÊ»ùÿÿÿÿ
+\
+java:S2441)":Make "User" serializable or don't store it in the session.(ıù«äøÿÿÿÿ8¾‹É®„/
+~
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(°°‘û8ˆ‡‘®„/

@@ -22,12 +22,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <%if(user == null) {%>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login.jsp">Login</a>
                 </li>
+                <% } else {%>
+                <li class="nav-item">
+                    <a class="nav-link"><%=user.getFullName()%></a>
+                </li>
+                <% } %>
                 <li class="nav-item">
                     <a class="nav-link" href="/addblog.jsp">Add Blog</a>
                 </li>
