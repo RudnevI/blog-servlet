@@ -1,0 +1,17 @@
+
+W
+java:S1118
+":Add a private constructor to hide the implicit public one.(Ï³Õš8¤ğìÌ†/
+X	java:S1254"<This block of commented-out lines of code should be removed.(ÚğÒ8›şòÍ†/
+q
+java:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÃîˆÙüÿÿÿÿ8ÔÜ¯Í†/
+F
+java:S2115")Add password protection to this database.(éáÙä8¤ğìÌ†/
+L
+java:S3740@"/Provide the parametrized type for this generic.(ªÀ²ì8àÚıÌ†/
+q
+java:S2095A"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Î¶¿Àÿÿÿÿÿ8ò›öÌ†/
+q
+java:S2095""OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‹ìèõÿÿÿÿÿ8¤ğìÌ†/
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á²Ç¬øÿÿÿÿ8¤ğìÌ†/
+X	java:S1256"<This block of commented-out lines of code should be removed.(š¼ù’8¤ğìÌ†/

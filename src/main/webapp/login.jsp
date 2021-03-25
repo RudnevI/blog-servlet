@@ -7,9 +7,9 @@
 </head>
 <body>
 <%@include file="templates/navbar.jsp"%>
-<div class="container">
+<div class="container mt-3">
     <div class="row">
-        <div class="col-sm-4 offset-4">
+        <div class="col-sm-4 offset-4 mt-5">
             <%
                 String errorMessage = "Incorrect password, please try again!";
                 Object error = request.getParameter("error");
@@ -25,7 +25,9 @@
             <%
                 }
             %>
+            <div class="container">
             <form action="/login" method="post">
+
                 <div class="form-group">
                     <label>E-mail: </label>
                     <input class="form-control" type="email" name="email" required value="<%=request.getParameter("email")!=null? request.getParameter("email") :""%>">
@@ -34,10 +36,11 @@
                     <label>Password: </label>
                     <input class="form-control" type="password" name="password" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group mt-1">
                     <button type="submit" class="btn btn-success">Log in</button>
                 </div>
             </form>
+            </div>
         </div>
     </div>
 </div>

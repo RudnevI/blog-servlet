@@ -10,13 +10,22 @@ public class Blog {
 
     private String content;
 
-    private Date creationDate;
+    private Long authorId;
 
-    public Blog(Long id, String title, String content, Date creationDate) {
+    private String creationDate;
+
+    public Long getAuthorId() {
+        return authorId;
+    }
+
+
+
+    public Blog(Long id, String title, String content, Long authorId, String creationDate) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.creationDate = creationDate;
+        this.authorId = authorId;
     }
 
     public Long getId() {
@@ -31,7 +40,7 @@ public class Blog {
         return content;
     }
 
-    public Date getCreationDate() {
+    public String getCreationDate() {
         return creationDate;
     }
 }

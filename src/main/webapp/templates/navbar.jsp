@@ -28,7 +28,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/login.jsp">Login</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="/addblog.jsp">Add Blog</a>
+                </li>
 
             </ul>
             <form class="d-flex">
