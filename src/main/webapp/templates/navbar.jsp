@@ -24,7 +24,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <%if(user == null) {%>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Register</a>
+                    <a class="nav-link active" aria-current="page" href="/registration">Register</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/login.jsp">Login</a>

@@ -10,18 +10,18 @@ import java.util.List;
 public class DbManager {
 
     private static Connection connection;
-    private static final String URL = "jdbc:sqlite:C:\\Users\\РудневИ\\Documents\\SpringServer\\Collab\\identifier.sqlite";
+    private static final String URL = "jdbc:sqlite:C:\\Users\\admin\\Documents\\java\\blog-servlet\\identifier.sqlite";
     private static final String GET_USER_BY_EMAIL = "SELECT * FROM users WHERE email = ? LIMIT 1";
     private static final String GET_ALL_BLOGS = "SELECT * FROM blogs";
     private static final String GET_USER_BY_ID = "SELECT * FROM users WHERE id = ?";
+    private static final String ADD_USER = "INSERT INTO users VALUES(null,   ?, ?, ?)";
 
     static {
-        try{
+        try {
             Class.forName("org.sqlite.JDBC");
             connection = DriverManager.getConnection(URL);
 
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -30,29 +30,29 @@ public class DbManager {
     public static User getUserByEmail(String email) throws SQLException {
 
         User user = null;
+        try {
+            PreparedStatement statement = connection.prepareStatement(GET_USER_BY_EMAIL);
+            statement.setString(1, email);
 
-        PreparedStatement statement = connection.prepareStatement(GET_USER_BY_EMAIL);
-        statement.setString(1, email);
-
-        ResultSet resultSet = statement.executeQuery();
-
-
+            ResultSet resultSet = statement.executeQuery();
 
 
-        if(resultSet.next())  {
-            user = new User
-                    (
-                            resultSet.getLong(1),
-                            resultSet.getString(2),
-                            resultSet.getString(3),
-                            resultSet.getString(4)
-                    );
+            if (resultSet.next()) {
+                user = new User
+                        (
+                                resultSet.getLong(1),
+                                resultSet.getString(2),
+                                resultSet.getString(3),
+                                resultSet.getString(4)
+                        );
 
-        }
+            }
         /*statement.close();
         resultSet.close();*/
-        /*connection.close();*/
-
+            /*connection.close();*/
+        } catch (Exception e) {
+            System.out.println("User does not exist");
+        }
         return user;
 
 
@@ -66,7 +66,7 @@ public class DbManager {
 
         ResultSet set = statement.executeQuery();
 
-        while(set.next()) {
+        while (set.next()) {
 
             blog = new Blog(
                     set.getLong(1),
@@ -74,7 +74,7 @@ public class DbManager {
                     set.getString(3),
                     set.getLong(4),
                     set.getString(5)
-                    );
+            );
             blogs.add(blog);
         }
         return blogs;
@@ -92,6 +92,18 @@ public class DbManager {
                 set.getString(3),
                 set.getString(4)
         );
+
+    }
+
+    public static void addUser(User user) throws SQLException {
+
+        PreparedStatement statement = connection.prepareStatement(ADD_USER);
+
+        statement.setString(1, user.getEmail());
+        statement.setString(2, user.getFullName());
+        statement.setString(3, user.getPassword());
+
+        statement.executeUpdate();
 
     }
 
