@@ -27,5 +27,9 @@ K
 src/main/webapp/addblog.jsp,f\b\fbba97f78c3177256abd6dca02eb35420158f808
 I
 src/main/webapp/blogs.jsp,5\b\5b091edb18f98917012a3670c51dc811870b74ba
-k
-;src/main/java/com/example/Collab/servlets/BlogsServlet.java,1\1\11b279cf340b5ef5ea6914a407382b824a71cf00
+P
+ src/main/webapp/registration.jsp,d\d\dd51f7041d5a8d7bb17c79a85099a350e198ae09
+r
+Bsrc/main/java/com/example/Collab/servlets/RegistrationServlet.java,8\5\852b7564824ea2d610d02e7e59fc093c392e823e
+m
+=src/main/java/com/example/Collab/servlets/AddBlogServlet.java,c\6\c6b0ae321d746ac9b21121dce944bd9ed38545fb

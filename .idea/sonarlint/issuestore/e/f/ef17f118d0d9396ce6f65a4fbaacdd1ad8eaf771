@@ -1,17 +1,22 @@
 
+l
+java:S2095r"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(…ó¶â8Îö«Ê‡/
+q
+java:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Î¶¿Àÿÿÿÿÿ8ò›öÌ†/
+L
+java:S3740A"/Provide the parametrized type for this generic.(ªÀ²ì8àÚıÌ†/
+q
+java:S2095#"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‹ìèõÿÿÿÿÿ8¤ğìÌ†/
+X	java:S1253"<This block of commented-out lines of code should be removed.(ÚğÒ8›şòÍ†/
+X	java:S1255"<This block of commented-out lines of code should be removed.(š¼ù’8¤ğìÌ†/
+q
+java:S2095V"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÃîˆÙüÿÿÿÿ8ÔÜ¯Í†/
 W
 java:S1118
 ":Add a private constructor to hide the implicit public one.(Ï³Õš8¤ğìÌ†/
-q
-java:S2095U"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÃîˆÙüÿÿÿÿ8ÔÜ¯Í†/
-L
-java:S3740@"/Provide the parametrized type for this generic.(ªÀ²ì8àÚıÌ†/
-F
-java:S2115")Add password protection to this database.(éáÙä8¤ğìÌ†/
-q
-java:S2095A"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Î¶¿Àÿÿÿÿÿ8ò›öÌ†/
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(á²Ç¬øÿÿÿÿ8¤ğìÌ†/
-X	java:S1256"<This block of commented-out lines of code should be removed.(š¼ù’8¤ğìÌ†/
-q
-java:S2095""OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(‹ìèõÿÿÿÿÿ8¤ğìÌ†/
-X	java:S1254"<This block of commented-out lines of code should be removed.(ÚğÒ8›şòÍ†/
+Z	java:S1067"9Replace this use of System.out or System.err by a logger.(óÅ”ˆúÿÿÿÿ8§Œ¨È‡/
+F
+java:S2115")Add password protection to this database.(éáÙä8¤ğìÌ†/
+l
+java:S2095e"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(˜”•»8­äÇ‡/

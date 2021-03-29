@@ -19,14 +19,19 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-4 offset-4">
+            <form method="post">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Title</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="text" class="form-control" id="exampleFormControlInput1" name="title">
             </div>
             <div class="mb-3">
                 <label class="form-label">Blog Text</label>
-                <textarea class="form-control" id="tinemc" rows="3"></textarea>
+                <textarea class="form-control" id="tinemc" rows="3" name="content"></textarea>
             </div>
+                <div class="mb-3">
+                    <button type="submit">POST</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

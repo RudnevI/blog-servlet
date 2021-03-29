@@ -1353,8 +1353,8 @@
     </column>
     <column id="497" parent="170" name="date">
       <Position>5</Position>
-      <DataType>timeStamp|0s</DataType>
-      <DefaultExpression>now</DefaultExpression>
+      <DataType>text|0s</DataType>
+      <DefaultExpression>current_timestamp</DefaultExpression>
     </column>
     <key id="498" parent="170" name="blogs_pk">
       <ColNames>id</ColNames>

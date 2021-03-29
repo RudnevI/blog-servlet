@@ -27,16 +27,17 @@
                     <a class="nav-link active" aria-current="page" href="/registration">Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/login.jsp">Login</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
                 <% } else {%>
                 <li class="nav-item">
                     <a class="nav-link"><%=user.getFullName()%></a>
                 </li>
-                <% } %>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="/addblog.jsp">Add Blog</a>
+                    <a class="nav-link" href="/addblog">Add Blog</a>
                 </li>
+                <% } %>
 
             </ul>
             <form class="d-flex">

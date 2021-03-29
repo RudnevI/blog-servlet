@@ -1,0 +1,10 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(çÊ»ùÿÿÿÿ8ÒÌËÇ‡/
+~
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(äÄÏÿ8ÒÌËÇ‡/
+\
+java:S24411":Make "User" serializable or don't store it in the session.(¥åÀµÿÿÿÿÿ8Ö¢–É‡/
+u
+java:S19896"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ªà¥Šøÿÿÿÿ8âã¬È‡/
+u
+java:S1989:"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ÅÛÀöşÿÿÿÿ8›ª®È‡/

@@ -28,6 +28,13 @@ public class Blog {
         this.authorId = authorId;
     }
 
+    public Blog(String title, String content, Long authorId, String creationDate) {
+        this.title = title;
+        this.content = content;
+        this.authorId = authorId;
+        this.creationDate = creationDate;
+    }
+
     public Long getId() {
         return id;
     }

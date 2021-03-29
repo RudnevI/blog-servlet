@@ -24,11 +24,12 @@
                 else if(error.equals("3")) errorMessage.append("Passwords do not match");
 
         %>
+        <div class="col-sm-4 offset-4">
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
             <strong><%=errorMessage.toString()%></strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-
+        </div>
 
         <%
             }

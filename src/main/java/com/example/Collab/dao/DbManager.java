@@ -15,6 +15,7 @@ public class DbManager {
     private static final String GET_ALL_BLOGS = "SELECT * FROM blogs";
     private static final String GET_USER_BY_ID = "SELECT * FROM users WHERE id = ?";
     private static final String ADD_USER = "INSERT INTO users VALUES(null,   ?, ?, ?)";
+    private static final String ADD_BLOG = "INSERT INTO blogs VALUES(null, ?, ?, ?, ?)";
 
     static {
         try {
@@ -104,6 +105,21 @@ public class DbManager {
         statement.setString(3, user.getPassword());
 
         statement.executeUpdate();
+
+
+    }
+
+    public static void addBlog(Blog blog) throws SQLException {
+
+        PreparedStatement statement = connection.prepareStatement(ADD_BLOG);
+
+        statement.setString(1, blog.getTitle());
+        statement.setString(2, blog.getContent());
+        statement.setLong(3, blog.getAuthorId());
+        statement.setString(4, blog.getCreationDate());
+
+        statement.executeUpdate();
+
 
     }
 
